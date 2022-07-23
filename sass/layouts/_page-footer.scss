@@ -7,9 +7,27 @@
 
 .footer.container {
     display: flex;
-    align-items: baseline;
-    justify-content: center;
     padding: 0 15px;
+
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        padding-left: 76px;
+        padding-right: 89px;
+        align-items: baseline;
+    }
+
+    @media screen and (max-width: 767px) {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    @media screen and (max-width: 1199px) {
+        flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: $desktop) {
+        align-items: baseline;
+        justify-content: center;
+    }
 }
 
 
@@ -17,7 +35,20 @@
 
 
 .footer-address {
-    margin-right: 70px;
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        margin-right: auto;
+        margin-bottom: 60px;
+        text-align: center;
+    }
+    
+    @media screen and (min-width: $desktop) {
+        margin-right: 70px;
+    }
 }
 
 .footer-address__logo {
@@ -73,11 +104,23 @@
 
 
 .footer-social {
-    margin-right: 93px;
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        text-align: center;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-right: 93px;
+    }
 }
 
 .invocation {
     display: inline-block;
+    text-align: center;
     margin-bottom: 20px;
     font-size: 14px;
     line-height: 1.14;
@@ -88,6 +131,10 @@
 .icon-set {
     display: flex;
     padding: 0;
+
+    @media screen and (max-width: 767px) {
+        justify-content: center
+    }
 }
 
 .icon-set__item {
@@ -130,19 +177,42 @@
 
 
 .footer-email {
-    width: 570px;
+
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 570px;
+    }
 }
 
 .form-follow__field {
     display: flex;
-    align-items: flex-end;
     justify-content: center;
+
+    @media screen and (max-width: 1199px) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @media screen and (min-width: $desktop) {
+        align-items: flex-end;
+    }
 }
 
 .form-follow__label {
     display: flex;
     flex-direction: column;
-    margin-right: 12px;
+
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-right: 12px;
+    }
 }
 
 .form-follow__input {
@@ -151,7 +221,7 @@
 
     letter-spacing: 0.03em;
 
-    width: 358px;
+    width: 450px;
     height: 50px;
 
     color: var(--white-color);
@@ -162,6 +232,14 @@
     border-radius: 4px;
 
     cursor: pointer;
+
+    @media screen and (max-width: 1199px) {
+        width: 450px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 358px;
+    }
 }
 
 .form-follow__field .form-follow__input::placeholder {

@@ -2,20 +2,35 @@
 
 .customers {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
+
+    @media screen and (max-width: 1199px) {
+        flex-wrap: wrap;
+        margin: -15px;
+    }
+}
+
+.customer__item {
+    @media screen and (max-width: 767px) {
+        width: calc((100% - 60px) / 2);
+        margin: 15px;
+    }
+
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        width: calc((100% - 90px) / 3);
+        margin: 15px;
+    }
 }
 
 .customer__item:not(:last-child) {
-    margin-right: 30px;
+    @media screen and (min-width: $desktop) {
+        margin-right: 30px;
+    }
 }
 
 .customer__link {
     display: flex;
     align-items: center;
     justify-content: center;
-    Width: 170px;
     Height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
@@ -23,6 +38,10 @@
     transition-property: border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: $desktop) {
+        width: 170px;
+    }
 }
 
 .customer__link:hover,
