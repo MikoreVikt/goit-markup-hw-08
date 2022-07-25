@@ -3,12 +3,21 @@
 
 .filter {
     display: flex;
-    justify-content: center;
-    margin-bottom: 34px;
-}
 
-.filter__item:not(:last-child) {
-    margin-right: 8px;
+    @media screen and (max-width: 767px) {
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+        gap: 15px 8px;
+    }
+    
+    @media screen and (min-width: $tablet) {
+        justify-content: center;
+        margin-bottom: 34px;
+
+        &__item:not(:last-child) {
+            margin-right: 8px;
+        }
+    }
 }
 
 .filter__btn {
