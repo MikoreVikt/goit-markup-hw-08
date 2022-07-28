@@ -12,11 +12,19 @@
         justify-content: center;
         flex-basis: calc(100%  / 1);
     }
+
     @media screen and (min-width: $tablet) {
         flex-basis: calc((100% - 30px) / 2);
     }
+
     @media screen and (min-width: $desktop) {
         flex-basis: calc((100% - 60px) / 3);
+    }
+}
+
+@media screen and (min-width: $tablet) and (max-width: 1199px) {
+    .project__item:first-child .project__card {
+        padding-bottom: 56px;
     }
 }
 
