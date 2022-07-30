@@ -56,11 +56,10 @@
     align-items: center;
     justify-content: center;
 
-    transform: translateY(100%);
+    transform: translateY(101%);
     transition: transform var(--anim-standart);
 
     background-color: rgba(33, 150, 243, 0.9);
-    ;
 }
 
 .project__link:hover .project__overlay,
