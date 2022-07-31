@@ -10,8 +10,6 @@
     padding: 0 15px;
 
     @media screen and (min-width: $tablet) and (max-width: 1199px) {
-        padding-left: 76px;
-        padding-right: 89px;
         align-items: baseline;
     }
 
@@ -22,6 +20,7 @@
 
     @media screen and (max-width: 1199px) {
         flex-wrap: wrap;
+        justify-content: space-around;
     }
 
     @media screen and (min-width: $desktop) {
@@ -41,7 +40,6 @@
     }
 
     @media screen and (min-width: $tablet) and (max-width: 1199px) {
-        margin-right: auto;
         margin-bottom: 60px;
         text-align: center;
     }

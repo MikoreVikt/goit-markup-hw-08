@@ -179,18 +179,26 @@
 
     transition: color var(--anim-standart);
 
+    
     @media screen and (max-width: 767px) {
         font-size: 24px;
         line-height: 1.16;
         padding: 16px 0;
-
+        
         &.contacts__link--current {
             font-size: 34px;
             line-height: 1.17;
             color: var(--accent-color);
         }
     }
-
+    
+    @media screen and (max-width: 479px) {
+        
+        &.contacts__link--current {
+            font-size: 27px;
+        }
+    }
+    
     @media screen and (min-width: $tablet) and (max-width: 1199px) {
         padding: 5px 0;
         font-size: 12px;

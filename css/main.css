@@ -531,7 +531,6 @@ textarea:focus {
 
 @media screen and (max-width: 767px) {
   .burger {
-    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -822,6 +821,11 @@ textarea:focus {
     font-size: 34px;
     line-height: 1.17;
     color: var(--accent-color);
+  }
+}
+@media screen and (max-width: 479px) {
+  .contacts__link.contacts__link--current {
+    font-size: 27px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -1341,10 +1345,15 @@ textarea:focus {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-bottom: 34px;
+    margin-bottom: 30px;
   }
   .filter__item:not(:last-child) {
     margin-right: 8px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filter {
+    margin-bottom: 50px;
   }
 }
 
@@ -1514,8 +1523,6 @@ textarea:focus {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer.container {
-    padding-left: 76px;
-    padding-right: 89px;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
@@ -1534,6 +1541,8 @@ textarea:focus {
   .footer.container {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1555,7 +1564,6 @@ textarea:focus {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-address {
-    margin-right: auto;
     margin-bottom: 60px;
     text-align: center;
   }

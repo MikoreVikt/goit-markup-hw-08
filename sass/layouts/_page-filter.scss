@@ -12,11 +12,15 @@
     
     @media screen and (min-width: $tablet) {
         justify-content: center;
-        margin-bottom: 34px;
+        margin-bottom: 30px;
 
         &__item:not(:last-child) {
             margin-right: 8px;
         }
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 50px;
     }
 }
 
